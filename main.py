@@ -1,16 +1,6 @@
-# This is a sample Python script.
+from dataprocessor.processor import TextDataProcessor
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    file_path = ""
+    text_data_process = TextDataProcessor("test")
+    text_data_process.process_file_and_create_dataset()
