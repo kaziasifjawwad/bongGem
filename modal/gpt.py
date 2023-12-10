@@ -2,7 +2,7 @@ from transformers import AutoModelForCausalLM
 from transformers import AutoTokenizer
 from transformers import Trainer, TrainingArguments
 
-from models.Model import ParentModel
+from modal.Model import ParentModel
 
 
 class BengaliGpt(ParentModel):
