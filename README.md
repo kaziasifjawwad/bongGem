@@ -1,6 +1,7 @@
 # bongGem Virtual Environment
 
-This repository contains scripts to create and activate a Python virtual environment named `bongGem` for Linux and Windows environments.
+This repository contains scripts to create and activate a Python virtual environment named `bongGem` for Linux and
+Windows environments.
 
 ## Getting Started
 
@@ -11,6 +12,7 @@ This repository contains scripts to create and activate a Python virtual environ
 ### Usage
 
 #### For Linux execute the commands below to activate the virtual terminal:
+
 1. `python3 -m venv bongGem_venv`
 2. `source ./bongGem_venv/bin/activate`
 
