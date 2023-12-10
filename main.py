@@ -1,5 +1,5 @@
 from dataprocessor.processor import TextDataProcessor
-from modal.gpt import BengaliGpt
+from models.gpt import BengaliGpt
 
 if __name__ == '__main__':
     text_data_process = TextDataProcessor(dataset_path="test",
