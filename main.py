@@ -1,12 +1,13 @@
-from dataprocessor.processor import TextDataProcessor
+from dataprocessor.processor import TextDataProcessor, CSVDataProcessor
 from models.gpt import BengaliGpt
 
 if __name__ == '__main__':
-    text_data_process = TextDataProcessor(dataset_path="test",
-                                          processed_dataset_path="content/train.txt")
-    text_data_process.process_file_and_create_dataset()
-
-    train_file_path = text_data_process.dataset_path
+    custom_data_process = CSVDataProcessor(
+        google_drive_id="15mfX5bI3aGdAPsVoegt6aHcbuYAspiIf",
+        processed_dataset_path="content/train.txt"
+    )
+    custom_data_process.process_file_and_create_dataset()
+    train_file_path = custom_data_process.processed_dataset_path
     model_name = 'flax-community/gpt2-bengali'
     output_dir = 'custom_q_and_a'
     overwrite_output_dir = False

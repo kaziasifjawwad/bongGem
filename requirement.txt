@@ -2,3 +2,4 @@ accelerate
 transformers
 pandas
 numpy
+gdown
