@@ -1,4 +1,5 @@
-from dataprocessor.processor import TextDataProcessor, CSVDataProcessor
+from dataprocessor.processor import CSVDataProcessor
+from inference.gpt2 import GPTInference
 from models.gpt import BengaliGpt
 
 if __name__ == '__main__':
@@ -26,3 +27,11 @@ if __name__ == '__main__':
     )
 
     bengali_gpt.train()
+
+    ## Inference
+    model_file_path = bengali_gpt.output_dir
+    sequence = "ঢাকা কোথায় থাক ?"
+    max_len = 100
+
+    gPTInference = GPTInference(model_file_path)
+    gPTInference.generate_text(sequence, max_len)

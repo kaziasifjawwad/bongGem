@@ -25,7 +25,6 @@ class BengaliGpt(ParentModel):
 
     def train(self):
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        print(self.model_name)
         train_dataset = super().load_dataset(self.train_file_path, tokenizer)
         data_collator = super().load_data_collator(tokenizer)
         tokenizer.save_pretrained(self.output_dir)
