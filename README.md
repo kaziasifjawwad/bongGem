@@ -80,6 +80,11 @@ It takes the following argument:
 * Saving steps
 
 
+### Model inference
+For evaluation our model, we've created a separate class GPTInference.
+This class takes only one argument in its constructor.
+* Model file path
 
-
+For inference the output we need to call the `generate_text` method 
+with our input text along with the maximum length.
 
